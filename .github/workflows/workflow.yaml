@@ -27,10 +27,10 @@ jobs:
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-    - name: Set GCP credentials
-      run: |
-        echo ${{ secrets.GOOGLE_SA }} >> CREDENTIAL_FILE.json
-        cat $CREDENTIAL_FILE.json
+#    - name: Set GCP credentials
+#      run: |
+#        echo ${{ secrets.GOOGLE_SA }} >> CREDENTIAL_FILE.json
+#        cat $CREDENTIAL_FILE.json
 
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
