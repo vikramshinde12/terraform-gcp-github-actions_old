@@ -29,8 +29,8 @@ jobs:
 
     - name: Set GCP credentials
       run: |
-        echo ${{ secrets.GOOGLE_SA }} >> cred.json
-        export GOOGLE_APPLICATION_CREDENTIALS=cred.json
+        echo ${{ secrets.GOOGLE_SA }} >> CREDENTIAL_FILE.json
+        cat $CREDENTIAL_FILE.json
 
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
